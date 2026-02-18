@@ -123,5 +123,6 @@ This project is open-source and free to use for learning purposes.
 ##  Author
 
 **Mohammad Fahad Nawaz Khan**
+
 Creative Product Engineer | Node.js | JavaScript
 
