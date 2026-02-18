@@ -211,6 +211,7 @@ while (true) {
         [0, 0, 0, 0]
     ];
     while (true) {
+        console.clear();
         printBoard(board)
         let move = readline.question(`w a s d: `)
 
