@@ -8,7 +8,7 @@ This project focuses on **understanding game state, movement logic, and edge cas
 
 ---
 
-## 📌 Features
+## Features
 
 * 4×4 grid gameplay (classic 2048 rules)
 * Move in all directions:
@@ -41,7 +41,7 @@ This project focuses on **understanding game state, movement logic, and edge cas
 
 ```bash
 git clone git@github.com:FahadNawazKhan/2048.git
-cd 2048-cli-game
+cd 2048
 ```
 
 ###  Install dependencies
@@ -66,7 +66,6 @@ node game.js
 | `a` | Move Left  |
 | `s` | Move Down  |
 | `d` | Move Right |
-| `q` | Quit Game  |
 
 ---
 
