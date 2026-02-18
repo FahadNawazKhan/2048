@@ -8,6 +8,10 @@ This project focuses on **understanding game state, movement logic, and edge cas
 
 ---
 
+![2048gameplaygif](https://github.com/user-attachments/assets/70a59f3e-73dd-4b3f-9cfe-058411c79876)
+
+---
+
 ## Features
 
 * 4×4 grid gameplay (classic 2048 rules)
