@@ -4,16 +4,33 @@ import readline from 'readline-sync';
 
 
 function printBoard(board) {
+    const cellWidth = 6;
+    const line = "+------+------ +------+------+".replace(" ", "");
+
+    console.log("+------+------+------+------+");
+
     for (let i = 0; i < 4; i++) {
-        let line = "";
+        let row = "|";
 
         for (let j = 0; j < 4; j++) {
-            line = line + board[i][j] + " ";
+            let value = board[i][j] === 0 ? "." : board[i][j].toString();
+            let spaces = cellWidth - value.length;
+
+            let leftSpaces = Math.floor(spaces / 2);
+            let rightSpaces = spaces - leftSpaces;
+
+            for (let k = 0; k < leftSpaces; k++) row += " ";
+            row += value;
+            for (let k = 0; k < rightSpaces; k++) row += " ";
+
+            row += "|";
         }
 
-        console.log(line);
+        console.log(row);
+        console.log("+------+------+------+------+");
     }
 }
+
 // printBoard(board)
 
 
@@ -200,7 +217,7 @@ function isGameOver(board) {
 }
 
 while (true) {
-    let choice = readline.questionInt(`1: START 0: EXIT\n`)
+    let choice = readline.questionInt(`1: START 0: EXIT \n`)
     if (choice !== 1) {
         break;
     }
@@ -224,24 +241,19 @@ while (true) {
 
         if (move == 'w') {
             moved = moveUp(board)
-            printBoard(board)
-            console.log('---------')
+
         }
         if (move == 'a') {
             moved = moveLeft(board)
-            printBoard(board)
-            console.log('---------')
         }
         if (move == 's') {
             moved = moveDown(board)
-            printBoard(board)
-            console.log('---------')
+
 
         }
         if (move == 'd') {
             moved = moveRight(board)
-            printBoard(board)
-            console.log('---------')
+
         }
 
         if (moved) {
