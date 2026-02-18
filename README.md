@@ -8,7 +8,7 @@ This project focuses on **understanding game state, movement logic, and edge cas
 
 ---
 
-![2048gameplaygif](https://github.com/user-attachments/assets/70a59f3e-73dd-4b3f-9cfe-058411c79876)
+![2048gameplaygif](https://github.com/user-attachments/assets/e51e06e7-b58d-4f42-b330-da5054dfdc8e)
 
 ---
 
