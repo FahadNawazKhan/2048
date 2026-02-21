@@ -217,16 +217,38 @@ function isGameOver(board) {
 }
 
 while (true) {
+    console.log(`
+
+        ██████╗  ██████╗ ██╗  ██╗ █████╗ 
+        ╚════██╗██╔═████╗██║  ██║██╔══██╗
+        █████╔╝██║██╔██║███████║╚█████╔╝
+        ██╔═══╝ ████╔╝██║╚════██║██╔══██╗
+        ███████╗╚██████╔╝     ██║╚█████╔╝
+        ╚══════╝ ╚═════╝      ╚═╝ ╚════╝
+
+            2048 — Terminal Edition
+            A Node.js CLI Game Project
+
+------------------------------------------------
+ Written in JavaScript | Runs in your terminal
+------------------------------------------------
+
+`);
     let choice = readline.questionInt(`1: START 0: EXIT \n`)
     if (choice !== 1) {
         break;
     }
+
+
     const board = [
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0]
     ];
+
+
+    
     while (true) {
         console.clear();
         printBoard(board)
